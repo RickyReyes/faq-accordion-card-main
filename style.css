@@ -48,14 +48,14 @@ body {
 .container .mobile-illustration {
   z-index: 2;
   position: absolute;
-  top: -22.5%;
-  left: 1.5rem;
+  top: -110px;
+  left: 1rem;
 }
 
 .container .mobile-shadow {
   position: absolute;
   top: 0;
-  left: 3.2rem;
+  left: 2.7rem;
 }
 
 .container h1 {
@@ -78,11 +78,14 @@ body {
 
 .container ul li img {
   position: absolute;
-  top: 50%;
+  top: 1.4rem;
   right: 0;
 }
 
 .container ul .answer {
   display: none;
+  padding-top: .5rem;
+  padding-right: 1rem;
+  font-size: .75rem;
 }
 /*# sourceMappingURL=style.css.map */
