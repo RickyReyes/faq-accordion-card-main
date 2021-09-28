@@ -20,8 +20,8 @@
 body {
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
   background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
-  background-repeat: none;
-  height: 100vh;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +36,7 @@ body {
 
 .container {
   background: white;
-  margin: 9.25rem 1.5rem 0rem;
+  margin: 9.25rem 1.5rem 4rem;
   padding: 8rem 1.5rem 3rem;
   height: auto;
   border-radius: 20px;
@@ -75,13 +75,15 @@ body {
   cursor: pointer;
 }
 
-.container ul li img {
+.container ul li .arrow {
   position: absolute;
   top: 1.4rem;
   right: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.container ul .answer {
+.container ul .answer-1, .container ul .answer-2, .container ul .answer-3, .container ul .answer-4, .container ul .answer-5 {
   display: none;
   padding-top: .5rem;
   padding-right: 1rem;
