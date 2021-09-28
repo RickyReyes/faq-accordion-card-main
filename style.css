@@ -3,7 +3,7 @@
   --very-dark-desaturated-blue: hsl(238, 29%, 16%);
   --soft-red: hsl(14, 88%, 65%);
   --soft-violet: hsl(273, 75%, 66%);
-  -soft-blue: #6565e7;
+  --soft-blue: hsl(240, 73%, 65%);
   --very-dark-grayish-blue: hsl(237, 12%, 33%);
   --dark-grayish-blue: hsl(240, 6%, 50%);
   --light-grayish-blue: hsl(240, 5%, 91%);
@@ -45,6 +45,8 @@ body {
   border-radius: 20px;
   position: relative;
   width: calc(375px - 3rem);
+  -webkit-box-shadow: 0px 25px 25px -25px #3c284d;
+          box-shadow: 0px 25px 25px -25px #3c284d;
 }
 
 .container .illustration {
@@ -86,6 +88,10 @@ body {
   transition: all 0.3s ease;
 }
 
+.container ul li:active ~ .question {
+  color: #f47c57;
+}
+
 .container ul .answer {
   display: none;
   padding-top: .5rem;
@@ -114,6 +120,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    overflow-y: hidden;
   }
   .container .desktop-flex-left {
     position: relative;
@@ -146,6 +153,7 @@ body {
   .container .desktop-flex-right h1 {
     text-align: left;
     font-size: 2.2rem;
+    padding-bottom: 2rem;
   }
   .container .desktop-flex-right ul {
     font-size: 1rem;
