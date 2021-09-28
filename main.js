@@ -39,8 +39,6 @@ function onClick1(e) {
     if (clicked1) {
         arrow_1.style.transform = 'rotate(180deg)';
         answer_1.style.display = 'block';
-        answer_1.style.transition = 'all 2s ease';
-        void answer_1.offsetHeight
         question_1.style.color = 'black';
         question_1.style.fontWeight = '700';
     } else {
@@ -56,7 +54,6 @@ function onClick2(e) {
     if (clicked2) {
         arrow_2.style.transform = 'rotate(180deg)';
         answer_2.style.display = 'block';
-        void answer_2.offsetHeight
         question_2.style.color = 'black';
         question_2.style.fontWeight = '700';
     } else {
@@ -72,7 +69,6 @@ function onClick3(e) {
     if (clicked3) {
         arrow_3.style.transform = 'rotate(180deg)';
         answer_3.style.display = 'block';
-        void answer_3.offsetHeight
         question_3.style.color = 'black';
         question_3.style.fontWeight = '700';
     } else {
@@ -88,7 +84,6 @@ function onClick4(e) {
     if (clicked4) {
         arrow_4.style.transform = 'rotate(180deg)';
         answer_4.style.display = 'block';
-        void answer_4.offsetHeight
         question_4.style.color = 'black';
         question_4.style.fontWeight = '700';
     } else {
@@ -104,7 +99,6 @@ function onClick5(e) {
     if (clicked5) {
         arrow_5.style.transform = 'rotate(180deg)';
         answer_5.style.display = 'block';
-        void answer_5.offsetHeight
         question_5.style.color = 'black';
         question_5.style.fontWeight = '700';
     } else {

@@ -32,6 +32,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container {
@@ -44,7 +47,7 @@ body {
   width: calc(375px - 3rem);
 }
 
-.container .mobile-illustration {
+.container .illustration {
   z-index: 2;
   position: absolute;
   top: -110px;
@@ -83,10 +86,92 @@ body {
   transition: all 0.3s ease;
 }
 
-.container ul .answer-1, .container ul .answer-2, .container ul .answer-3, .container ul .answer-4, .container ul .answer-5 {
+.container ul .answer {
   display: none;
   padding-top: .5rem;
   padding-right: 1rem;
   font-size: .75rem;
+}
+
+.orange-box {
+  display: none;
+}
+
+.desktop-shadow {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  .container {
+    padding: 4rem 5rem 6rem 20rem;
+    margin: 7rem 0 7rem;
+    width: 85vw;
+    max-width: 950px;
+    min-height: 72.5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .desktop-flex-left {
+    position: relative;
+  }
+  .container .desktop-flex-left .mobile-shadow {
+    display: none;
+  }
+  .container .desktop-flex-left .illustration, .container .desktop-flex-left .desktop-shadow {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 450px;
+  }
+  .container .desktop-flex-left .illustration {
+    left: -25.8rem;
+    top: 3.5rem;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  .container .desktop-flex-left .desktop-shadow {
+    display: block;
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    left: -35.5rem;
+    bottom: 0;
+  }
+  .container .desktop-flex-right {
+    width: 66.6%;
+  }
+  .container .desktop-flex-right h1 {
+    text-align: left;
+    font-size: 2.2rem;
+  }
+  .container .desktop-flex-right ul {
+    font-size: 1rem;
+  }
+  .container .desktop-flex-right ul li {
+    padding: 1.2rem 0 1.2rem;
+  }
+  .transparent-div {
+    width: 150px;
+    min-height: 100vh;
+    background: white;
+    position: absolute;
+    left: -150px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+    background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+    top: -9.25rem;
+    z-index: 3;
+  }
+  .orange-box {
+    display: block;
+    position: absolute;
+    left: -6rem;
+    top: 14.21rem;
+    z-index: 4;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

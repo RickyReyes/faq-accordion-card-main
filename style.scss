@@ -33,6 +33,7 @@ body  {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -43,7 +44,7 @@ body  {
     border-radius: 20px;
     position: relative;
     width: calc(375px - 3rem);
-    .mobile-illustration {
+    .illustration {
         z-index: 2;
         position: absolute;
         top: -110px;
@@ -77,11 +78,87 @@ body  {
                 transition: all 0.3s ease;
             }
         }
-        .answer-1, .answer-2, .answer-3, .answer-4, .answer-5 {
+        .answer {
             display: none;
             padding-top: .5rem;
             padding-right: 1rem;
             font-size: .75rem;
         }
+    }
+}
+
+.orange-box {
+    display: none;
+}
+
+.desktop-shadow {
+    display: none;
+}
+
+
+@media (min-width: 1050px) {
+    .container {
+        padding: 4rem 5rem 6rem 20rem;
+        margin: 7rem 0 7rem;
+        width: 85vw;
+        max-width: 950px;
+        min-height: 72.5vh;
+        display: flex;
+        justify-content: space-between;
+        .desktop-flex-left {
+            position: relative;
+            .mobile-shadow {
+                display: none;
+            }
+            .illustration, .desktop-shadow {
+                position: absolute;
+                transform: translateY(-50%);
+                width: 450px;
+            }
+            .illustration {
+                left: -25.8rem;
+                top: 3.5rem;
+                transform: scale(1.3);
+            }
+            .desktop-shadow {
+                display: block;
+                transform: scale(2);
+                left: -35.5rem;
+                bottom: 0;
+            }
+        }
+        .desktop-flex-right {
+            width: 66.6%;
+            h1 {
+                text-align: left;
+                font-size: 2.2rem;
+            }
+            ul {
+                font-size: 1rem;
+                li {
+                    padding: 1.2rem 0 1.2rem;
+                }
+            }
+        }
+    }
+
+    .transparent-div {
+        width: 150px;
+        min-height: 100vh;
+        background: white;
+        position: absolute;
+        left: -150px;
+        background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
+        top: -9.25rem;
+        z-index: 3;
+    }
+
+    .orange-box {
+        display: block;
+        position: absolute;
+        left: -6rem;
+        top: 14.21rem;
+        z-index: 4;
+        transform: scale(1.1);
     }
 }
