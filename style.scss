@@ -102,6 +102,10 @@ body  {
 
 
 @media (min-width: 1050px) {
+    body {
+        overflow-y: hidden;
+        position: relative;
+    }
     .container {
         padding: 4rem 5rem 6rem 20rem;
         margin: 7rem 0 7rem;
@@ -110,9 +114,24 @@ body  {
         min-height: 72.5vh;
         display: flex;
         justify-content: space-between;
-        overflow-y: hidden;
+
+
+        overflow-x: hidden;
+
+
         .desktop-flex-left {
             position: relative;
+            // .transparent-div {
+            //     width: 150px;
+            //     min-height: 100vh;
+            //     background: white;
+            //     position: absolute;
+            //     left: -470px;
+            //     background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
+            //     top: -9.25rem;
+            //     z-index: 3;
+            // }
+
             .mobile-shadow {
                 display: none;
             }
@@ -148,24 +167,15 @@ body  {
             }
         }
     }
-
-    .transparent-div {
-        width: 150px;
-        min-height: 100vh;
-        background: white;
+    .container::before {
+        content: '';
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        background-image: url(/images/illustration-box-desktop.svg);
+        background-repeat: no-repeat;
         position: absolute;
-        left: -150px;
-        background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
-        top: -9.25rem;
-        z-index: 3;
-    }
-
-    .orange-box {
-        display: block;
-        position: absolute;
-        left: -6rem;
-        top: 14.21rem;
-        z-index: 4;
-        transform: scale(1.1);
+        top: 50%;
+        right: 50%;
     }
 }
