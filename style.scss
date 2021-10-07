@@ -103,10 +103,10 @@ body  {
 
 @media (min-width: 1050px) {
     body {
-        overflow-y: hidden;
         position: relative;
     }
     .container {
+        overflow-y: hidden;
         padding: 4rem 5rem 6rem 20rem;
         margin: 7rem 0 7rem;
         width: 85vw;
@@ -114,11 +114,7 @@ body  {
         min-height: 72.5vh;
         display: flex;
         justify-content: space-between;
-
-
         overflow-x: hidden;
-
-
         .desktop-flex-left {
             position: relative;
             // .transparent-div {
