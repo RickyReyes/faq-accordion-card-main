@@ -1,9 +1,5 @@
 var arr = ['li_1', 'li_2', 'li_3', 'li_4', 'li_5'];
 
-arr.map()
-
-
-
 const li_1 = document.querySelector('.li-1');
 const li_2 = document.querySelector('.li-2');
 const li_3 = document.querySelector('.li-3');
