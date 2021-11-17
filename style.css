@@ -128,10 +128,10 @@ body {
   .container .orange-box {
     display: block;
     position: absolute;
-    top: 57%;
+    top: 56%;
     left: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.2);
-            transform: translateX(-50%) translateY(-50%) scale(1.2);
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(1.25);
+            transform: translateX(-50%) translateY(-50%) scale(1.25);
     z-index: 3;
   }
   .container .illustration-container {
